@@ -1,0 +1,91 @@
+dspatel@dspatel:~/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis$ make job.name="mr.hw1.Sequential" alone
+mvn clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ClimateAnalysis 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ClimateAnalysis ---
+[INFO] Deleting /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ClimateAnalysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ ClimateAnalysis ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ClimateAnalysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ ClimateAnalysis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ ClimateAnalysis ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ClimateAnalysis ---
+[INFO] Building jar: /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.4.3:shade (default) @ ClimateAnalysis ---
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0.jar with /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.122 s
+[INFO] Finished at: 2017-02-10T22:30:08-05:00
+[INFO] Final Memory: 29M/293M
+[INFO] ------------------------------------------------------------------------
+rm -rf output*
+/usr/local/hadoop/bin/hadoop jar target/ClimateAnalysis-1.0.jar mr.hw1.Sequential input output
+Running time = 15533
+dspatel@dspatel:~/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis$ make job.name="mr.hw1.Sequential" alone
+mvn clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ClimateAnalysis 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ClimateAnalysis ---
+[INFO] Deleting /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ClimateAnalysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ ClimateAnalysis ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ClimateAnalysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ ClimateAnalysis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ ClimateAnalysis ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ClimateAnalysis ---
+[INFO] Building jar: /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.4.3:shade (default) @ ClimateAnalysis ---
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0.jar with /home/dspatel/Study/Masters/3 Spring 2017/MR/HW2/workspace/ClimateAnalysis/target/ClimateAnalysis-1.0-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.525 s
+[INFO] Finished at: 2017-02-10T22:30:33-05:00
+[INFO] Final Memory: 25M/258M
+[INFO] ------------------------------------------------------------------------
+rm -rf output*
+/usr/local/hadoop/bin/hadoop jar target/ClimateAnalysis-1.0.jar mr.hw1.Sequential input output
+Running time = 15218
+
